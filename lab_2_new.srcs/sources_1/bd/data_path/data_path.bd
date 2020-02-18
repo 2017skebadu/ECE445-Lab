@@ -1,0 +1,537 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4DD493EE9454D90B",
+      "device": "xc7a35tcpg236-1",
+      "name": "data_path",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "instmem_0": "",
+      "regfile_0": "",
+      "ALU_0": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "xlslice_2": "",
+      "xlslice_3": "",
+      "xlslice_4": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "Control_0": "",
+      "Project_Counter_0": "",
+      "Program_Counter_Adder_0": "",
+      "alu_control_0": ""
+    },
+    "ports": {
+      "Reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "Data_Output": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Zero": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Carry_Out": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Overflow": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "clock": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "instmem_0": {
+        "vlnv": "xilinx.com:module_ref:instmem:1.0",
+        "xci_name": "data_path_instmem_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "instmem",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "read_inst": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "inst_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "regfile_0": {
+        "vlnv": "xilinx.com:module_ref:regfile:1.0",
+        "xci_name": "data_path_regfile_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "regfile",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "data_path_Clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RegWrite": {
+            "direction": "I"
+          },
+          "read_reg1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "read_reg2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "write_reg": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "write_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "read_data1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "read_data2": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ALU_0": {
+        "vlnv": "xilinx.com:module_ref:ALU:1.0",
+        "xci_name": "data_path_ALU_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ALU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ALUCntl": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Carryin": {
+            "direction": "I"
+          },
+          "ALUOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "Zero": {
+            "direction": "O"
+          },
+          "Carryout": {
+            "direction": "O"
+          },
+          "Overflow": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "data_path_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "5"
+          },
+          "DOUT_WIDTH": {
+            "value": "6"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "data_path_xlslice_1_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DIN_TO": {
+            "value": "11"
+          },
+          "DOUT_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "data_path_xlslice_2_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "20"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "xlslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "data_path_xlslice_3_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "25"
+          },
+          "DIN_TO": {
+            "value": "21"
+          },
+          "DOUT_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "xlslice_4": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "data_path_xlslice_4_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "26"
+          },
+          "DIN_TO": {
+            "value": "21"
+          },
+          "DOUT_WIDTH": {
+            "value": "6"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "data_path_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "data_path_xlconstant_1_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "4"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "Control_0": {
+        "vlnv": "xilinx.com:module_ref:Control:1.0",
+        "xci_name": "data_path_Control_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Control",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Instruction": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "RegWrite": {
+            "direction": "O"
+          }
+        }
+      },
+      "Project_Counter_0": {
+        "vlnv": "xilinx.com:module_ref:Project_Counter:1.0",
+        "xci_name": "data_path_Project_Counter_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Project_Counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "Reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "Din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Program_Counter_Adder_0": {
+        "vlnv": "xilinx.com:module_ref:Program_Counter_Adder:1.0",
+        "xci_name": "data_path_Program_Counter_Adder_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Program_Counter_Adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Cons": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "alu_control_0": {
+        "vlnv": "xilinx.com:module_ref:alu_control:1.0",
+        "xci_name": "data_path_alu_control_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "alu_control",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Din": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Project_Counter_0_Output": {
+        "ports": [
+          "Project_Counter_0/Dout",
+          "instmem_0/read_inst",
+          "Program_Counter_Adder_0/Din"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "clock",
+          "regfile_0/clock",
+          "Project_Counter_0/Clock"
+        ]
+      },
+      "Control_0_RegWrite": {
+        "ports": [
+          "Control_0/RegWrite",
+          "regfile_0/RegWrite"
+        ]
+      },
+      "alu_control_0_Dout": {
+        "ports": [
+          "alu_control_0/Dout",
+          "ALU_0/ALUCntl"
+        ]
+      },
+      "regfile_0_read_data1": {
+        "ports": [
+          "regfile_0/read_data1",
+          "ALU_0/A"
+        ]
+      },
+      "regfile_0_read_data2": {
+        "ports": [
+          "regfile_0/read_data2",
+          "ALU_0/B"
+        ]
+      },
+      "ALU_0_ALUOut": {
+        "ports": [
+          "ALU_0/ALUOut",
+          "regfile_0/write_data",
+          "Data_Output"
+        ]
+      },
+      "Reset_1": {
+        "ports": [
+          "Reset",
+          "Project_Counter_0/Reset"
+        ]
+      },
+      "ALU_0_Zero": {
+        "ports": [
+          "ALU_0/Zero",
+          "Zero"
+        ]
+      },
+      "ALU_0_Carryout": {
+        "ports": [
+          "ALU_0/Carryout",
+          "Carry_Out"
+        ]
+      },
+      "ALU_0_Overflow": {
+        "ports": [
+          "ALU_0/Overflow",
+          "Overflow"
+        ]
+      },
+      "instmem_0_inst_out": {
+        "ports": [
+          "instmem_0/inst_out",
+          "xlslice_0/Din",
+          "xlslice_1/Din",
+          "xlslice_2/Din",
+          "xlslice_3/Din",
+          "xlslice_4/Din"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "alu_control_0/Din"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "regfile_0/write_reg"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "regfile_0/read_reg2"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "xlslice_3/Dout",
+          "regfile_0/read_reg1"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "xlslice_4/Dout",
+          "Control_0/Instruction"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "ALU_0/Carryin"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "Program_Counter_Adder_0/Cons"
+        ]
+      },
+      "Program_Counter_Adder_0_Dout": {
+        "ports": [
+          "Program_Counter_Adder_0/Dout",
+          "Project_Counter_0/Din"
+        ]
+      }
+    }
+  }
+}

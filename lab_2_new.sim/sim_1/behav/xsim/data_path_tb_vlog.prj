@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_0_0/sim/data_path_xlslice_0_0.v" \
+"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_1_0/sim/data_path_xlslice_1_0.v" \
+"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_2_0/sim/data_path_xlslice_2_0.v" \
+"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_3_0/sim/data_path_xlslice_3_0.v" \
+"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_4_0/sim/data_path_xlslice_4_0.v" \
+"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlconstant_0_0/sim/data_path_xlconstant_0_0.v" \
+"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlconstant_1_0/sim/data_path_xlconstant_1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
