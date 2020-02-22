@@ -57,7 +57,7 @@ ALUOut  <= ALU_Result;
                 sub_result(32) when "0110",
                 'Z' when others;
 ---Set Less Than--------------------------------------------
-  slt <= x"11111111" when B > A else x"00000000";
-  sltu <= x"11111111" when b32 > a32 else x"00000000";
+  slt <= x"00000001" when B > A else x"00000000";
+  sltu <= x"00000001" when b32 > a32 else x"00000000";
 end Behavioral;
 

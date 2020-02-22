@@ -56,9 +56,9 @@ begin
         Data_Output => Dout_tb);
     clock_p: process
     begin
-        clock_tb <='0';
-        wait for 20 ns;
         clock_tb <='1';
+        wait for 20 ns;
+        clock_tb <='0';
         wait for 20 ns;
     end process;
     
@@ -70,7 +70,7 @@ begin
         reset_tb <= '0';
         wait for 20 ns;
         
-        for I in 0 to 10 loop
+        for I in 0 to 14 loop
             wait for 20 ns;
         end loop;
     end process testbench;

@@ -7,14 +7,6 @@ vhdl xil_defaultlib  \
 "../../../../regfile.vhd" \
 "../../../../alu_control.vhd" \
 "../../../../alu.vhd" \
-"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_Program_Counter_Adder_0_0/sim/data_path_Program_Counter_Adder_0_0.vhd" \
-"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_instmem_0_0/sim/data_path_instmem_0_0.vhd" \
-"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_Project_Counter_0_0/sim/data_path_Project_Counter_0_0.vhd" \
-"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_Control_0_0/sim/data_path_Control_0_0.vhd" \
-"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_regfile_0_0/sim/data_path_regfile_0_0.vhd" \
-"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_alu_control_0_0/sim/data_path_alu_control_0_0.vhd" \
-"../../../../lab_2_new.ip_user_files/bd/data_path/ip/data_path_ALU_0_0/sim/data_path_ALU_0_0.vhd" \
-"../../../../lab_2_new.ip_user_files/bd/data_path/sim/data_path.vhd" \
 "../../../../data_path_tb.vhd" \
 
 # Do not sort compile order

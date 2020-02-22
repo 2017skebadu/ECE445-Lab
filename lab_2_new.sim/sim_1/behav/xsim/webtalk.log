@@ -2,13 +2,13 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Feb 12 15:24:24 2020
-# Process ID: 5973
+# Start of session at: Fri Feb 21 19:17:55 2020
+# Process ID: 23573
 # Current directory: /home/samuel/lab_2_new/lab_2_new.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /home/samuel/lab_2_new/lab_2_new.sim/sim_1/behav/xsim/xsim.dir/data_path_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/samuel/lab_2_new/lab_2_new.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: /home/samuel/lab_2_new/lab_2_new.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
 source /home/samuel/lab_2_new/lab_2_new.sim/sim_1/behav/xsim/xsim.dir/data_path_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-webtalk_transmit: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 399.418 ; gain = 0.000 ; free physical = 789 ; free virtual = 5727
-INFO: [Common 17-206] Exiting Webtalk at Wed Feb 12 15:24:30 2020...
+INFO: [Common 17-186] '/home/samuel/lab_2_new/lab_2_new.sim/sim_1/behav/xsim/xsim.dir/data_path_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Feb 21 19:17:57 2020. For additional details about this file, please refer to the WebTalk help file at /home/samuel/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb 21 19:17:57 2020...

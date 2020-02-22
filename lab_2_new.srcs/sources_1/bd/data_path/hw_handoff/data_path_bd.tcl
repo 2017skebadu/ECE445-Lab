@@ -298,8 +298,8 @@ proc create_root_design { parentCell } {
   # Create instance: xlslice_4, and set properties
   set xlslice_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_4 ]
   set_property -dict [ list \
-   CONFIG.DIN_FROM {26} \
-   CONFIG.DIN_TO {21} \
+   CONFIG.DIN_FROM {31} \
+   CONFIG.DIN_TO {26} \
    CONFIG.DOUT_WIDTH {6} \
  ] $xlslice_4
 

@@ -11,7 +11,6 @@
     "design_tree": {
       "instmem_0": "",
       "regfile_0": "",
-      "ALU_0": "",
       "xlslice_0": "",
       "xlslice_1": "",
       "xlslice_2": "",
@@ -22,7 +21,8 @@
       "Control_0": "",
       "Project_Counter_0": "",
       "Program_Counter_Adder_0": "",
-      "alu_control_0": ""
+      "alu_control_0": "",
+      "ALU_0": ""
     },
     "ports": {
       "Reset": {
@@ -160,49 +160,6 @@
           }
         }
       },
-      "ALU_0": {
-        "vlnv": "xilinx.com:module_ref:ALU:1.0",
-        "xci_name": "data_path_ALU_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "ALU",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "A": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "B": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "ALUCntl": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "Carryin": {
-            "direction": "I"
-          },
-          "ALUOut": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "Zero": {
-            "direction": "O"
-          },
-          "Carryout": {
-            "direction": "O"
-          },
-          "Overflow": {
-            "direction": "O"
-          }
-        }
-      },
       "xlslice_0": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "xci_name": "data_path_xlslice_0_0",
@@ -265,10 +222,10 @@
         "xci_name": "data_path_xlslice_4_0",
         "parameters": {
           "DIN_FROM": {
-            "value": "26"
+            "value": "31"
           },
           "DIN_TO": {
-            "value": "21"
+            "value": "26"
           },
           "DOUT_WIDTH": {
             "value": "6"
@@ -400,6 +357,49 @@
             "direction": "O",
             "left": "3",
             "right": "0"
+          }
+        }
+      },
+      "ALU_0": {
+        "vlnv": "xilinx.com:module_ref:ALU:1.0",
+        "xci_name": "data_path_ALU_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ALU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ALUCntl": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Carryin": {
+            "direction": "I"
+          },
+          "ALUOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "Zero": {
+            "direction": "O"
+          },
+          "Carryout": {
+            "direction": "O"
+          },
+          "Overflow": {
+            "direction": "O"
           }
         }
       }
