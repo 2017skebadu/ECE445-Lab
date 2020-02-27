@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x4DD493EE9454D90B",
+      "boundary_crc": "0x40AD3D9CFADDF66C",
       "device": "xc7a35tcpg236-1",
       "name": "data_path",
       "synth_flow_mode": "Hierarchical",
@@ -9,7 +9,6 @@
       "validated": "true"
     },
     "design_tree": {
-      "instmem_0": "",
       "regfile_0": "",
       "xlslice_0": "",
       "xlslice_1": "",
@@ -22,7 +21,9 @@
       "Project_Counter_0": "",
       "Program_Counter_Adder_0": "",
       "alu_control_0": "",
-      "ALU_0": ""
+      "ALU_0": "",
+      "xlslice_5": "",
+      "instmem_0": ""
     },
     "ports": {
       "Reset": {
@@ -82,30 +83,14 @@
       },
       "clock": {
         "direction": "I"
+      },
+      "pcout": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
       }
     },
     "components": {
-      "instmem_0": {
-        "vlnv": "xilinx.com:module_ref:instmem:1.0",
-        "xci_name": "data_path_instmem_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "instmem",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "read_inst": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "inst_out": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          }
-        }
-      },
       "regfile_0": {
         "vlnv": "xilinx.com:module_ref:regfile:1.0",
         "xci_name": "data_path_regfile_0_0",
@@ -402,14 +387,51 @@
             "direction": "O"
           }
         }
+      },
+      "xlslice_5": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "data_path_xlslice_5_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "6"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DOUT_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "instmem_0": {
+        "vlnv": "xilinx.com:module_ref:instmem:1.0",
+        "xci_name": "data_path_instmem_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "instmem",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "read_inst": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "inst_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
       "Project_Counter_0_Output": {
         "ports": [
           "Project_Counter_0/Dout",
-          "instmem_0/read_inst",
-          "Program_Counter_Adder_0/Din"
+          "Program_Counter_Adder_0/Din",
+          "xlslice_5/Din",
+          "instmem_0/read_inst"
         ]
       },
       "Net": {
@@ -530,6 +552,12 @@
         "ports": [
           "Program_Counter_Adder_0/Dout",
           "Project_Counter_0/Din"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "xlslice_5/Dout",
+          "pcout"
         ]
       }
     }

@@ -1,0 +1,515 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb 26 19:35:00 2020
+# Process ID: 9516
+# Current directory: /home/samuel/lab_2_new/lab_2_new.runs/synth_1
+# Command line: vivado -log TopLevel_comp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel_comp.tcl
+# Log file: /home/samuel/lab_2_new/lab_2_new.runs/synth_1/TopLevel_comp.vds
+# Journal file: /home/samuel/lab_2_new/lab_2_new.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source TopLevel_comp.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/samuel/Xilinx/Vivado/2019.1/data/ip'.
+add_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.266 ; gain = 8.012 ; free physical = 3129 ; free virtual = 6356
+Command: synth_design -top TopLevel_comp -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9630 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1709.266 ; gain = 152.715 ; free physical = 2745 ; free virtual = 5972
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel_comp' [/home/samuel/lab_2_new/toplevel.vhd:19]
+INFO: [Synth 8-3491] module 'data_path_wrapper' declared at '/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/imports/hdl/data_path_wrapper.v:12' bound to instance 'U1' of component 'data_path_wrapper' [/home/samuel/lab_2_new/toplevel.vhd:55]
+INFO: [Synth 8-6157] synthesizing module 'data_path_wrapper' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/imports/hdl/data_path_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'data_path' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/synth/data_path.v:13]
+INFO: [Synth 8-6157] synthesizing module 'data_path_ALU_0_0' [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_ALU_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_ALU_0_0' (1#1) [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_ALU_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_path_Control_0_0' [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_Control_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_Control_0_0' (2#1) [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_Control_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_path_Program_Counter_Adder_0_0' [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_Program_Counter_Adder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_Program_Counter_Adder_0_0' (3#1) [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_Program_Counter_Adder_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_path_Project_Counter_0_0' [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_Project_Counter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_Project_Counter_0_0' (4#1) [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_Project_Counter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_path_alu_control_0_0' [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_alu_control_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_alu_control_0_0' (5#1) [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_alu_control_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_path_instmem_0_0' [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_instmem_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_instmem_0_0' (6#1) [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_instmem_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_path_regfile_0_0' [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_regfile_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_regfile_0_0' (7#1) [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/.Xil/Vivado-9516-Samuel-ThinkPad/realtime/data_path_regfile_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_path_xlconstant_0_0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlconstant_0_0/synth/data_path_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (8#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_xlconstant_0_0' (9#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlconstant_0_0/synth/data_path_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'data_path_xlconstant_1_0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlconstant_1_0/synth/data_path_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 4 - type: integer 
+	Parameter CONST_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' (9#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_xlconstant_1_0' (10#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlconstant_1_0/synth/data_path_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'data_path_xlslice_0_0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_0_0/synth/data_path_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 5 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (11#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_xlslice_0_0' (12#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_0_0/synth/data_path_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'data_path_xlslice_1_0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_1_0/synth/data_path_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (12#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_xlslice_1_0' (13#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_1_0/synth/data_path_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'data_path_xlslice_2_0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_2_0/synth/data_path_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 20 - type: integer 
+	Parameter DIN_TO bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (13#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_xlslice_2_0' (14#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_2_0/synth/data_path_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'data_path_xlslice_3_0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_3_0/synth/data_path_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 25 - type: integer 
+	Parameter DIN_TO bound to: 21 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (14#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_xlslice_3_0' (15#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_3_0/synth/data_path_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'data_path_xlslice_4_0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_4_0/synth/data_path_xlslice_4_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 26 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' (15#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_xlslice_4_0' (16#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_4_0/synth/data_path_xlslice_4_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'data_path_xlslice_5_0' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_5_0/synth/data_path_xlslice_5_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 6 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' (16#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_xlslice_5_0' (17#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_xlslice_5_0/synth/data_path_xlslice_5_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'data_path' (18#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/synth/data_path.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'data_path_wrapper' (19#1) [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/imports/hdl/data_path_wrapper.v:12]
+INFO: [Synth 8-226] default block is never used [/home/samuel/lab_2_new/toplevel.vhd:81]
+INFO: [Synth 8-226] default block is never used [/home/samuel/lab_2_new/toplevel.vhd:90]
+INFO: [Synth 8-226] default block is never used [/home/samuel/lab_2_new/toplevel.vhd:99]
+INFO: [Synth 8-226] default block is never used [/home/samuel/lab_2_new/toplevel.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel_comp' (20#1) [/home/samuel/lab_2_new/toplevel.vhd:19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized4 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized3 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1764.016 ; gain = 207.465 ; free physical = 2781 ; free virtual = 6008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1766.984 ; gain = 210.434 ; free physical = 2791 ; free virtual = 6018
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1766.984 ; gain = 210.434 ; free physical = 2791 ; free virtual = 6018
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_Program_Counter_Adder_0_0/data_path_Program_Counter_Adder_0_0/data_path_Program_Counter_Adder_0_0_in_context.xdc] for cell 'U1/data_path_i/Program_Counter_Adder_0'
+Finished Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_Program_Counter_Adder_0_0/data_path_Program_Counter_Adder_0_0/data_path_Program_Counter_Adder_0_0_in_context.xdc] for cell 'U1/data_path_i/Program_Counter_Adder_0'
+Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_instmem_0_0/data_path_instmem_0_0/data_path_instmem_0_0_in_context.xdc] for cell 'U1/data_path_i/instmem_0'
+Finished Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_instmem_0_0/data_path_instmem_0_0/data_path_instmem_0_0_in_context.xdc] for cell 'U1/data_path_i/instmem_0'
+Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_Project_Counter_0_0/data_path_Project_Counter_0_0/data_path_Project_Counter_0_0_in_context.xdc] for cell 'U1/data_path_i/Project_Counter_0'
+Finished Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_Project_Counter_0_0/data_path_Project_Counter_0_0/data_path_Project_Counter_0_0_in_context.xdc] for cell 'U1/data_path_i/Project_Counter_0'
+Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_Control_0_0/data_path_Control_0_0/data_path_Control_0_0_in_context.xdc] for cell 'U1/data_path_i/Control_0'
+Finished Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_Control_0_0/data_path_Control_0_0/data_path_Control_0_0_in_context.xdc] for cell 'U1/data_path_i/Control_0'
+Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_regfile_0_0/data_path_regfile_0_0/data_path_regfile_0_0_in_context.xdc] for cell 'U1/data_path_i/regfile_0'
+Finished Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_regfile_0_0/data_path_regfile_0_0/data_path_regfile_0_0_in_context.xdc] for cell 'U1/data_path_i/regfile_0'
+Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_alu_control_0_0/data_path_alu_control_0_0/data_path_alu_control_0_0_in_context.xdc] for cell 'U1/data_path_i/alu_control_0'
+Finished Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_alu_control_0_0/data_path_alu_control_0_0/data_path_alu_control_0_0_in_context.xdc] for cell 'U1/data_path_i/alu_control_0'
+Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_ALU_0_0/data_path_ALU_0_0/data_path_ALU_0_0_in_context.xdc] for cell 'U1/data_path_i/ALU_0'
+Finished Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.srcs/sources_1/bd/data_path/ip/data_path_ALU_0_0/data_path_ALU_0_0/data_path_ALU_0_0_in_context.xdc] for cell 'U1/data_path_i/ALU_0'
+Parsing XDC File [/home/samuel/lab_2_new/mips.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clock_IBUF'. [/home/samuel/lab_2_new/mips.xdc:7]
+Finished Parsing XDC File [/home/samuel/lab_2_new/mips.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/samuel/lab_2_new/mips.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TopLevel_comp_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/samuel/lab_2_new/mips.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopLevel_comp_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopLevel_comp_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/samuel/lab_2_new/lab_2_new.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.652 ; gain = 0.000 ; free physical = 2708 ; free virtual = 5929
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.652 ; gain = 0.000 ; free physical = 2708 ; free virtual = 5929
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.652 ; gain = 318.102 ; free physical = 2775 ; free virtual = 5995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.652 ; gain = 318.102 ; free physical = 2775 ; free virtual = 5995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U1/data_path_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/Program_Counter_Adder_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/instmem_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/Project_Counter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/Control_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/regfile_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/alu_control_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/ALU_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/xlslice_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/xlslice_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/xlslice_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/data_path_i/xlslice_5. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.652 ; gain = 318.102 ; free physical = 2775 ; free virtual = 5995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.652 ; gain = 318.102 ; free physical = 2767 ; free virtual = 5988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopLevel_comp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.652 ; gain = 318.102 ; free physical = 2755 ; free virtual = 5979
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.652 ; gain = 318.102 ; free physical = 2617 ; free virtual = 5857
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.652 ; gain = 318.102 ; free physical = 2616 ; free virtual = 5856
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.652 ; gain = 318.102 ; free physical = 2615 ; free virtual = 5855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.590 ; gain = 324.039 ; free physical = 2617 ; free virtual = 5858
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.590 ; gain = 324.039 ; free physical = 2617 ; free virtual = 5858
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.590 ; gain = 324.039 ; free physical = 2617 ; free virtual = 5858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.590 ; gain = 324.039 ; free physical = 2617 ; free virtual = 5858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.590 ; gain = 324.039 ; free physical = 2617 ; free virtual = 5858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.590 ; gain = 324.039 ; free physical = 2617 ; free virtual = 5858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |data_path_ALU_0_0                   |         1|
+|2     |data_path_Control_0_0               |         1|
+|3     |data_path_Program_Counter_Adder_0_0 |         1|
+|4     |data_path_Project_Counter_0_0       |         1|
+|5     |data_path_alu_control_0_0           |         1|
+|6     |data_path_instmem_0_0               |         1|
+|7     |data_path_regfile_0_0               |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |data_path_ALU_0_0                   |     1|
+|2     |data_path_Control_0_0               |     1|
+|3     |data_path_Program_Counter_Adder_0_0 |     1|
+|4     |data_path_Project_Counter_0_0       |     1|
+|5     |data_path_alu_control_0_0           |     1|
+|6     |data_path_instmem_0_0               |     1|
+|7     |data_path_regfile_0_0               |     1|
+|8     |BUFG                                |     1|
+|9     |CARRY4                              |     5|
+|10    |LUT1                                |     2|
+|11    |LUT2                                |     4|
+|12    |LUT4                                |     7|
+|13    |LUT6                                |     8|
+|14    |MUXF7                               |     4|
+|15    |FDCE                                |    19|
+|16    |IBUF                                |     4|
+|17    |OBUF                                |    20|
++------+------------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------------------+------+
+|      |Instance           |Module                   |Cells |
++------+-------------------+-------------------------+------+
+|1     |top                |                         |   274|
+|2     |  U1               |data_path_wrapper        |   219|
+|3     |    data_path_i    |data_path                |   200|
+|4     |      xlconstant_0 |data_path_xlconstant_0_0 |     0|
+|5     |      xlconstant_1 |data_path_xlconstant_1_0 |     0|
+|6     |      xlslice_0    |data_path_xlslice_0_0    |     0|
+|7     |      xlslice_1    |data_path_xlslice_1_0    |     0|
+|8     |      xlslice_2    |data_path_xlslice_2_0    |     0|
+|9     |      xlslice_3    |data_path_xlslice_3_0    |     0|
+|10    |      xlslice_4    |data_path_xlslice_4_0    |     0|
+|11    |      xlslice_5    |data_path_xlslice_5_0    |     0|
++------+-------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.590 ; gain = 324.039 ; free physical = 2617 ; free virtual = 5858
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 160 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1880.590 ; gain = 216.371 ; free physical = 2668 ; free virtual = 5909
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.598 ; gain = 324.039 ; free physical = 2668 ; free virtual = 5909
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1892.496 ; gain = 0.000 ; free physical = 2618 ; free virtual = 5859
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1892.496 ; gain = 484.230 ; free physical = 2717 ; free virtual = 5958
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1892.496 ; gain = 0.000 ; free physical = 2717 ; free virtual = 5958
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/samuel/lab_2_new/lab_2_new.runs/synth_1/TopLevel_comp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopLevel_comp_utilization_synth.rpt -pb TopLevel_comp_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 26 19:35:51 2020...

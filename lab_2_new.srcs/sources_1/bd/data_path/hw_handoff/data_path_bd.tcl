@@ -173,6 +173,7 @@ proc create_root_design { parentCell } {
  ] $Reset
   set Zero [ create_bd_port -dir O -type data Zero ]
   set clock [ create_bd_port -dir I clock ]
+  set pcout [ create_bd_port -dir O -from 4 -to 0 pcout ]
 
   # Create instance: ALU_0, and set properties
   set block_name ALU
@@ -303,6 +304,14 @@ proc create_root_design { parentCell } {
    CONFIG.DOUT_WIDTH {6} \
  ] $xlslice_4
 
+  # Create instance: xlslice_5, and set properties
+  set xlslice_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_5 ]
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {6} \
+   CONFIG.DIN_TO {2} \
+   CONFIG.DOUT_WIDTH {5} \
+ ] $xlslice_5
+
   # Create port connections
   connect_bd_net -net ALU_0_ALUOut [get_bd_ports Data_Output] [get_bd_pins ALU_0/ALUOut] [get_bd_pins regfile_0/write_data]
   connect_bd_net -net ALU_0_Carryout [get_bd_ports Carry_Out] [get_bd_pins ALU_0/Carryout]
@@ -311,7 +320,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net Control_0_RegWrite [get_bd_pins Control_0/RegWrite] [get_bd_pins regfile_0/RegWrite]
   connect_bd_net -net Net [get_bd_ports clock] [get_bd_pins Project_Counter_0/Clock] [get_bd_pins regfile_0/clock]
   connect_bd_net -net Program_Counter_Adder_0_Dout [get_bd_pins Program_Counter_Adder_0/Dout] [get_bd_pins Project_Counter_0/Din]
-  connect_bd_net -net Project_Counter_0_Output [get_bd_pins Program_Counter_Adder_0/Din] [get_bd_pins Project_Counter_0/Dout] [get_bd_pins instmem_0/read_inst]
+  connect_bd_net -net Project_Counter_0_Output [get_bd_pins Program_Counter_Adder_0/Din] [get_bd_pins Project_Counter_0/Dout] [get_bd_pins instmem_0/read_inst] [get_bd_pins xlslice_5/Din]
   connect_bd_net -net Reset_1 [get_bd_ports Reset] [get_bd_pins Project_Counter_0/Reset]
   connect_bd_net -net alu_control_0_Dout [get_bd_pins ALU_0/ALUCntl] [get_bd_pins alu_control_0/Dout]
   connect_bd_net -net instmem_0_inst_out [get_bd_pins instmem_0/inst_out] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din] [get_bd_pins xlslice_3/Din] [get_bd_pins xlslice_4/Din]
@@ -324,6 +333,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net xlslice_2_Dout [get_bd_pins regfile_0/read_reg2] [get_bd_pins xlslice_2/Dout]
   connect_bd_net -net xlslice_3_Dout [get_bd_pins regfile_0/read_reg1] [get_bd_pins xlslice_3/Dout]
   connect_bd_net -net xlslice_4_Dout [get_bd_pins Control_0/Instruction] [get_bd_pins xlslice_4/Dout]
+  connect_bd_net -net xlslice_5_Dout [get_bd_ports pcout] [get_bd_pins xlslice_5/Dout]
 
   # Create address segments
 

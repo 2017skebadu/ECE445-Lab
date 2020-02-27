@@ -23,6 +23,7 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/data_path/ip/data_path_xlconstant_0_0/sim/data_path_xlconstant_0_0.v" \
   "../../../bd/data_path/ip/data_path_xlconstant_1_0/sim/data_path_xlconstant_1_0.v" \
+  "../../../bd/data_path/ip/data_path_xlslice_5_0/sim/data_path_xlslice_5_0.v" \
   "../../../bd/data_path/sim/data_path.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

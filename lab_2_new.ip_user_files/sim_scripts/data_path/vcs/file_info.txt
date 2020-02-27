@@ -14,5 +14,6 @@ data_path_xlslice_4_0.v,verilog,xil_defaultlib,../../../bd/data_path/ip/data_pat
 xlconstant_v1_1_vl_rfs.v,verilog,xlconstant_v1_1_6,../../../../lab_2_new.srcs/sources_1/bd/data_path/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v,
 data_path_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/data_path/ip/data_path_xlconstant_0_0/sim/data_path_xlconstant_0_0.v,
 data_path_xlconstant_1_0.v,verilog,xil_defaultlib,../../../bd/data_path/ip/data_path_xlconstant_1_0/sim/data_path_xlconstant_1_0.v,
+data_path_xlslice_5_0.v,verilog,xil_defaultlib,../../../bd/data_path/ip/data_path_xlslice_5_0/sim/data_path_xlslice_5_0.v,
 data_path.v,verilog,xil_defaultlib,../../../bd/data_path/sim/data_path.v,
 glbl.v,Verilog,xil_defaultlib,glbl.v

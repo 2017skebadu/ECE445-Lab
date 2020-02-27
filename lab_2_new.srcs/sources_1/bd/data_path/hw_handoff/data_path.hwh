@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Feb 19 19:41:59 2020" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Feb 26 19:29:08 2020" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="data_path" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -33,6 +33,11 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="regfile_0" PORT="clock"/>
         <CONNECTION INSTANCE="Project_Counter_0" PORT="Clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="pcout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_5_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlslice_5" PORT="Dout"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -150,8 +155,9 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Project_Counter_0_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="instmem_0" PORT="read_inst"/>
             <CONNECTION INSTANCE="Program_Counter_Adder_0" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_5" PORT="Din"/>
+            <CONNECTION INSTANCE="instmem_0" PORT="read_inst"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clock" SIGIS="clk" SIGNAME="External_Ports_clock">
@@ -410,6 +416,30 @@
         <PORT DIR="O" LEFT="5" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_4_Dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Control_0" PORT="Instruction"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_5" HWVERSION="1.0" INSTANCE="xlslice_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="6"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="data_path_xlslice_5_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="5"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="Project_Counter_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Project_Counter_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_5_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pcout"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

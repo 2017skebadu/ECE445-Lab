@@ -4,4 +4,46 @@ Running: /home/samuel/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 93fb
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture data_path_alu_0_0_arch of entity xil_defaultlib.data_path_ALU_0_0 [data_path_alu_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture data_path_control_0_0_arch of entity xil_defaultlib.data_path_Control_0_0 [data_path_control_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter_Adder [program_counter_adder_default]
+Compiling architecture data_path_program_counter_adder_0_0_arch of entity xil_defaultlib.data_path_Program_Counter_Adder_0_0 [data_path_program_counter_adder_...]
+Compiling architecture behavioral of entity xil_defaultlib.Project_Counter [project_counter_default]
+Compiling architecture data_path_project_counter_0_0_arch of entity xil_defaultlib.data_path_Project_Counter_0_0 [data_path_project_counter_0_0_de...]
+Compiling architecture behavioral of entity xil_defaultlib.alu_control [alu_control_default]
+Compiling architecture data_path_alu_control_0_0_arch of entity xil_defaultlib.data_path_alu_control_0_0 [data_path_alu_control_0_0_defaul...]
+Compiling architecture behavioral of entity xil_defaultlib.instmem [instmem_default]
+Compiling architecture data_path_instmem_0_0_arch of entity xil_defaultlib.data_path_instmem_0_0 [data_path_instmem_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.regfile [regfile_default]
+Compiling architecture data_path_regfile_0_0_arch of entity xil_defaultlib.data_path_regfile_0_0 [data_path_regfile_0_0_default]
+Compiling module xlconstant_v1_1_6.xlconstant_v1_1_6_xlconstant(CON...
+Compiling module xil_defaultlib.data_path_xlconstant_0_0
+Compiling module xlconstant_v1_1_6.xlconstant_v1_1_6_xlconstant(CON...
+Compiling module xil_defaultlib.data_path_xlconstant_1_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.data_path_xlslice_0_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.data_path_xlslice_1_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.data_path_xlslice_2_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.data_path_xlslice_3_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.data_path_xlslice_4_0
+Compiling architecture structure of entity xil_defaultlib.data_path [data_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path_tb
+Built simulation snapshot data_path_tb_behav

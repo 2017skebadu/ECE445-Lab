@@ -34,6 +34,7 @@ vlog -work xlconstant_v1_1_6 -64 \
 vlog -work xil_defaultlib -64 \
 "../../../bd/data_path/ip/data_path_xlconstant_0_0/sim/data_path_xlconstant_0_0.v" \
 "../../../bd/data_path/ip/data_path_xlconstant_1_0/sim/data_path_xlconstant_1_0.v" \
+"../../../bd/data_path/ip/data_path_xlslice_5_0/sim/data_path_xlslice_5_0.v" \
 "../../../bd/data_path/sim/data_path.v" \
 
 vlog -work xil_defaultlib \

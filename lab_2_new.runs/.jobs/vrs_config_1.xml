@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="data_path_Program_Counter_Adder_0_0_synth_1" LaunchDir="/home/samuel/lab_2_new/lab_2_new.runs/data_path_Program_Counter_Adder_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_path_instmem_0_0_synth_1" LaunchDir="/home/samuel/lab_2_new/lab_2_new.runs/data_path_instmem_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_path_Project_Counter_0_0_synth_1" LaunchDir="/home/samuel/lab_2_new/lab_2_new.runs/data_path_Project_Counter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_path_Control_0_0_synth_1" LaunchDir="/home/samuel/lab_2_new/lab_2_new.runs/data_path_Control_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_path_regfile_0_0_synth_1" LaunchDir="/home/samuel/lab_2_new/lab_2_new.runs/data_path_regfile_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_path_alu_control_0_0_synth_1" LaunchDir="/home/samuel/lab_2_new/lab_2_new.runs/data_path_alu_control_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_path_ALU_0_0_synth_1" LaunchDir="/home/samuel/lab_2_new/lab_2_new.runs/data_path_ALU_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/samuel/lab_2_new/lab_2_new.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="data_path_Program_Counter_Adder_0_0_synth_1"/>
+		<Parent Id="data_path_instmem_0_0_synth_1"/>
+		<Parent Id="data_path_Project_Counter_0_0_synth_1"/>
+		<Parent Id="data_path_Control_0_0_synth_1"/>
+		<Parent Id="data_path_regfile_0_0_synth_1"/>
+		<Parent Id="data_path_alu_control_0_0_synth_1"/>
+		<Parent Id="data_path_ALU_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

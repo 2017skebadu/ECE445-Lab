@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Wed Feb 19 19:41:58 2020
+//Date        : Wed Feb 26 19:29:07 2020
 //Host        : Samuel-ThinkPad running 64-bit Ubuntu 18.04.1 LTS
 //Command     : generate_target data_path.bd
 //Design      : data_path
@@ -9,20 +9,22 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "data_path,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=data_path,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "data_path.hwdef" *) 
+(* CORE_GENERATION_INFO = "data_path,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=data_path,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "data_path.hwdef" *) 
 module data_path
    (Carry_Out,
     Data_Output,
     Overflow,
     Reset,
     Zero,
-    clock);
+    clock,
+    pcout);
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.CARRY_OUT DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.CARRY_OUT, LAYERED_METADATA undef" *) output Carry_Out;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.DATA_OUTPUT DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.DATA_OUTPUT, LAYERED_METADATA undef" *) output [31:0]Data_Output;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.OVERFLOW DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.OVERFLOW, LAYERED_METADATA undef" *) output Overflow;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input Reset;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.ZERO DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.ZERO, LAYERED_METADATA undef" *) output Zero;
   input clock;
+  output [4:0]pcout;
 
   wire [31:0]ALU_0_ALUOut;
   wire ALU_0_Carryout;
@@ -44,6 +46,7 @@ module data_path
   wire [4:0]xlslice_2_Dout;
   wire [4:0]xlslice_3_Dout;
   wire [5:0]xlslice_4_Dout;
+  wire [4:0]xlslice_5_Dout;
 
   assign Carry_Out = ALU_0_Carryout;
   assign Data_Output[31:0] = ALU_0_ALUOut;
@@ -51,6 +54,7 @@ module data_path
   assign Overflow = ALU_0_Overflow;
   assign Reset_1 = Reset;
   assign Zero = ALU_0_Zero;
+  assign pcout[4:0] = xlslice_5_Dout;
   data_path_ALU_0_0 ALU_0
        (.A(regfile_0_read_data1),
         .ALUCntl(alu_control_0_Dout),
@@ -106,4 +110,7 @@ module data_path
   data_path_xlslice_4_0 xlslice_4
        (.Din(instmem_0_inst_out),
         .Dout(xlslice_4_Dout));
+  data_path_xlslice_5_0 xlslice_5
+       (.Din(Project_Counter_0_Output),
+        .Dout(xlslice_5_Dout));
 endmodule

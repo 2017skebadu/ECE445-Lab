@@ -1,2 +1,32 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_Program_Counter_Adder_0_0/sim/data_path_Program_Counter_Adder_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_Program_Counter_Adder_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_instmem_0_0/sim/data_path_instmem_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_instmem_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_Project_Counter_0_0/sim/data_path_Project_Counter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_Project_Counter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_Control_0_0/sim/data_path_Control_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_Control_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_regfile_0_0/sim/data_path_regfile_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_regfile_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_alu_control_0_0/sim/data_path_alu_control_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_alu_control_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_ALU_0_0/sim/data_path_ALU_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_ALU_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_0_0/sim/data_path_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_1_0/sim/data_path_xlslice_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_xlslice_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_2_0/sim/data_path_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_3_0/sim/data_path_xlslice_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_xlslice_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_4_0/sim/data_path_xlslice_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_xlslice_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlconstant_0_0/sim/data_path_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlconstant_1_0/sim/data_path_xlconstant_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_xlconstant_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/ip/data_path_xlslice_5_0/sim/data_path_xlslice_5_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path_xlslice_5_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/samuel/lab_2_new/lab_2_new.ip_user_files/bd/data_path/sim/data_path.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module data_path
